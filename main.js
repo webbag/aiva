@@ -21,7 +21,7 @@ function initializeRecorder() {
                     const formData = new FormData();
                     formData.append('file', audioBlob, 'recording.mp3');
                     formData.append('model', 'whisper-1');
-                    formData.append('language', 'pl');
+                    formData.append('language', 'en');
 
                     fetch('https://api.openai.com/v1/audio/transcriptions', {
                         method: 'POST',
