@@ -1,8 +1,5 @@
 # AIVA - Artificial Intelligence Voice Assistant
 
-Client HTTP 
-https://hoppscotch.io/
 
-Text to speach
-https://simonwillison.net/
-https://github.com/simonw/ospeak
+From tasks and workflows to apps and systems, build and automate anything in one powerful visual platform
+https://make.com
