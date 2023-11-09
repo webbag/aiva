@@ -1,0 +1,2 @@
+const OPENAI_API_KEY = "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";
+const MAKE_API_KEY = 'https://hook.eu2.make.com/ztoj0w59qvj9xkgysds0na1xxriu9mur';
