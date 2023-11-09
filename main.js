@@ -1,3 +1,4 @@
+
 console.log(OPENAI_API_KEY); 
 console.log(MAKE_API_KEY); 
 
@@ -58,14 +59,11 @@ function initializeRecorder() {
                                     }),
                                 })
                                 .then((response) => response.blob())
-                                .then((blob) => {
+                                .then(blob => {
                                     const url = window.URL.createObjectURL(blob);
-                                    const a = document.createElement("a");
-                                    a.href = url;
-                                    a.download = "speech.mp3";
-                                    document.body.appendChild(a);
-                                    a.click();
-                                    window.URL.revokeObjectURL(url);
+                                    const audio = new Audio(url);
+                                    audio.play();
+                                    // Nie trzeba już dodawać linka do dokumentu ani wywoływać a.click() ani window.URL.revokeObjectURL(url)
                                 })
                                 .catch((error) => console.error("Error:", error));
                             })
@@ -99,4 +97,4 @@ function initializeRecorder() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initializeRecorder();
-});f
+});
